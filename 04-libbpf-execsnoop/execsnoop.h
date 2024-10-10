@@ -9,6 +9,7 @@
 struct event {
     char comm[TASK_COMM_LEN];
     pid_t pid;
+    pid_t ppid;
     int retval;
     int args_count;
     unsigned int args_size;
